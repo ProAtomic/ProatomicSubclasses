@@ -1,0 +1,6 @@
+framework module ProatomicSubclasses {
+  umbrella header "ProatomicSubclasses.h"
+
+  export *
+  module * { export * }
+}

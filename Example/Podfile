@@ -1,0 +1,14 @@
+source 'git@bitbucket.org:proatomic/proatomicprivatepodspecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+target 'ProatomicSubclasses_Example' do
+  pod 'ProatomicSubclasses', :path => '../'
+
+  target 'ProatomicSubclasses_Tests' do
+    inherit! :search_paths
+
+#pod 'FBSnapshotTestCase'
+  end
+end
