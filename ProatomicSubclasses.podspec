@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ProatomicSubclasses'
-  s.version          = '0.2.7'
+  s.version          = '0.2.8'
   s.summary          = 'A lot of ProatomicSubclasses.'
   s.description      = "Proatomic subclasses for iOS."
   s.homepage         = 'http://proatomicdev.com'
@@ -22,6 +22,10 @@ s.source           = { :git => 'https://github.com/ProAtomic/ProatomicSubclasses
   ]
 
   s.subspec 'Core' do |ss|
+      ss.dependency 'pop'
+      ss.dependency 'CocoaLumberjack'
+      ss.dependency 'ProatomicCore'
+      ss.dependency 'ReactiveObjC'
     ss.vendored_frameworks = [ 'ProatomicSubclasses/Frameworks/ProatomicSubclasses-Release-iphoneuniversal/ProatomicSubclasses.framework' ]
   end
 end
