@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ProatomicSubclasses'
-  s.version          = '0.2.11'
+  s.version          = '0.2.12'
   s.summary          = 'A lot of ProatomicSubclasses.'
   s.description      = "Proatomic subclasses for iOS."
   s.homepage         = 'http://proatomicdev.com'
@@ -16,13 +16,12 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'Copyright', :text => 'Copyright 2016 Proatomic' }
   s.author           = { 'Guillermo Saenz' => 'gsaenz@proatomicdev.com' }
 s.source           = { :git => 'https://github.com/ProAtomic/ProatomicSubclasses.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
   s.default_subspecs= [
 'Core'
   ]
 
   s.subspec 'Core' do |ss|
-    ss.vendored_frameworks = [ 'ProatomicSubclasses/Frameworks/ProatomicSubclasses-Release-iphoneuniversal/ProatomicSubclasses.framework' ]
-    ss.dependency 'ReactiveObjC'
+    ss.vendored_frameworks = [ 'ProatomicSubclasses/Frameworks/ProatomicSubclasses-Release-iphoneuniversal/ProatomicSubclasses.xcframework' ]
   end
 end
