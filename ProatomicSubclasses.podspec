@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ProatomicSubclasses'
-  s.version          = '0.2.12'
+  s.version          = '0.2.13'
   s.summary          = 'A lot of ProatomicSubclasses.'
   s.description      = "Proatomic subclasses for iOS."
   s.homepage         = 'http://proatomicdev.com'
